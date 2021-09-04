@@ -4,6 +4,6 @@ title: About
 permalink: /about
 ---
 
-*This is an about page.*
-
-Feel free to tell the world about what you love! 😍
+This simply Jekyll based digital garden helps track various ideas in progress.
+Most notably it'll track my current thinkings on what i'm reading or listening
+to.
