@@ -3,11 +3,11 @@
   <head>
   <meta charset="UTF-8">
 
-  <link rel="canonical" href="/buddhist-geeks" />
+  <link rel="canonical" href="/research-towards-universality-in-multilingual-text-rewriting" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Open Source Buddhists">
+  <meta name="description" content="Adapting mT5 to fit different text styles">
 
   <meta property="og:site_name" content="My digital garden">
 
@@ -16,11 +16,11 @@
   <link rel="stylesheet" href="/digital-garden/styles.css">
 
   
-  <meta property="og:description" content="Open Source Buddhists"/>
+  <meta property="og:description" content="Adapting mT5 to fit different text styles"/>
   
 
   
-  <meta property="og:title" content="Buddhist Geeks">
+  <meta property="og:title" content="Towards Universality in Multilingual Text Rewriting">
   <meta property="og:type" content="article">
   
 
@@ -29,13 +29,13 @@
   <meta property="article:author" content="/">
   
 
-  <meta property="og:url" content="/buddhist-geeks" />
+  <meta property="og:url" content="/research-towards-universality-in-multilingual-text-rewriting" />
 
   
 
   <title>
     
-      Buddhist Geeks &mdash; My digital garden
+      Towards Universality in Multilingual Text Rewriting &mdash; My digital garden
     
   </title>
 </head>
@@ -48,9 +48,9 @@
     <div class="wrapper">
       <main><article>
   <div>
-    <h1>Buddhist Geeks</h1>
-    <time datetime="2021-09-04T18:11:22+09:00">
-      Last updated on September 4, 2021
+    <h1>Towards Universality in Multilingual Text Rewriting</h1>
+    <time datetime="2021-09-17T11:48:07+09:00">
+      Last updated on September 17, 2021
       
     </time>
   </div>
@@ -59,9 +59,38 @@
     <content>
       <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body>
-<p><a href="https://guide.buddhistgeeks.org/" target="blank">Buddhist Geeks</a> seems to be a mix of open
-source and <a class="internal-link" href="/digital-garden/buddhism">Buddhism</a>. They encourage open-ness and a multi-disciplinary
-practice that makes all lessons available.</p>
+<p>This <span title="There is no note that matches this link." class="invalid-link">
+  <span class="invalid-link-brackets">[[</span>
+  Machine Translation
+  <span class="invalid-link-brackets">]]</span></span> <a class="internal-link" href="/digital-garden/research">Research</a>
+<a href="https://arxiv.org/pdf/2107.14749.pdf" target="blank">paper</a>
+demonstrates how to modify a bilingual multilingual encoder decoder network to
+change the style of format of content using example sentences.</p>
+
+<p>This follows on some previous <a href="https://arxiv.org/abs/2010.03802" target="blank">work</a> with
+some tweaks to force multi-lingual support and some simplifications.  They in
+brief modify the ecoder’s embedding inputs with a multi-step process:</p>
+
+<ul>
+  <li>Take a sequence of sentences that are assumed to have the same “style”</li>
+  <li>Corrupt the second sentence to have either missing words or changed words</li>
+  <li>Produce a “style” vector by prepending some <code class="language-plaintext highlighter-rouge">&lt;2style&gt;</code> type token to the
+first sentence and running it through the encoder.</li>
+  <li>Mixing the embedding of the first sentence with first embedding of the first sentence.</li>
+  <li>Reproducing an uncorrupted version of the second sentence along with an
+English translation of the sentence (using parallel data).</li>
+</ul>
+
+<p>This modifies the original work in two key ways:</p>
+
+<ul>
+  <li>The encoder network is the same for both input sentences</li>
+  <li>The decoder is expected to also translate</li>
+</ul>
+
+<p>Both of these changes seem to encourage the model to do cross language style
+transfer with few examples.</p>
+
 </body></html>
 
     </content>

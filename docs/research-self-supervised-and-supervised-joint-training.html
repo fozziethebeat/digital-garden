@@ -3,11 +3,11 @@
   <head>
   <meta charset="UTF-8">
 
-  <link rel="canonical" href="/buddhist-geeks" />
+  <link rel="canonical" href="/research-self-supervised-and-supervised-joint-training" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Open Source Buddhists">
+  <meta name="description" content="Bayesian model inferring trust of annotators">
 
   <meta property="og:site_name" content="My digital garden">
 
@@ -16,11 +16,11 @@
   <link rel="stylesheet" href="/digital-garden/styles.css">
 
   
-  <meta property="og:description" content="Open Source Buddhists"/>
+  <meta property="og:description" content="Bayesian model inferring trust of annotators"/>
   
 
   
-  <meta property="og:title" content="Buddhist Geeks">
+  <meta property="og:title" content="Self-supervised and Supervised Joint Training for Resource-rich Machine Translation">
   <meta property="og:type" content="article">
   
 
@@ -29,13 +29,13 @@
   <meta property="article:author" content="/">
   
 
-  <meta property="og:url" content="/buddhist-geeks" />
+  <meta property="og:url" content="/research-self-supervised-and-supervised-joint-training" />
 
   
 
   <title>
     
-      Buddhist Geeks &mdash; My digital garden
+      Self-supervised and Supervised Joint Training for Resource-rich Machine Translation &mdash; My digital garden
     
   </title>
 </head>
@@ -48,9 +48,9 @@
     <div class="wrapper">
       <main><article>
   <div>
-    <h1>Buddhist Geeks</h1>
-    <time datetime="2021-09-04T18:11:22+09:00">
-      Last updated on September 4, 2021
+    <h1>Self-supervised and Supervised Joint Training for Resource-rich Machine Translation</h1>
+    <time datetime="2021-09-16T16:19:38+09:00">
+      Last updated on September 16, 2021
       
     </time>
   </div>
@@ -59,9 +59,32 @@
     <content>
       <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body>
-<p><a href="https://guide.buddhistgeeks.org/" target="blank">Buddhist Geeks</a> seems to be a mix of open
-source and <a class="internal-link" href="/digital-garden/buddhism">Buddhism</a>. They encourage open-ness and a multi-disciplinary
-practice that makes all lessons available.</p>
+<p>This <span title="There is no note that matches this link." class="invalid-link">
+  <span class="invalid-link-brackets">[[</span>
+  Machine Translation
+  <span class="invalid-link-brackets">]]</span></span> <a class="internal-link" href="/digital-garden/research">Research</a>
+<a href="https://arxiv.org/pdf/2106.04060.pdf" target="blank">paper</a> demonstrates how to train high
+end and high resource language pairs with parallel and monolingual data.  They
+extend an approach for low resource languages that innovates using
+encoder-decoder cross over techniques.</p>
+
+<p>Briefly, the paper produces data by:</p>
+<ul>
+  <li>Preparing monolingual data with two flavors: masked input to reproduce the
+original output and noised input to reproduce the original output.</li>
+  <li>Preparing regular bilingual data.</li>
+  <li>The two types of monolingual data get blended together with a crossover
+encoder-decoder network that produces a mixed embedding representation and
+output Ids.</li>
+  <li>The blended monolingual data is then blended with the bilingual data to
+again produce mixed embedding representations and output IDs.</li>
+  <li>The model then trains on that final second stage blended embeddings.</li>
+</ul>
+
+<p>The model improvements are impressive.  It produces the new state of the art in
+a very competitive open evaluation.  The approach also doesn’t look too
+complicated to produce even though it does slow down training by a noticable
+amount (20% drop in training time even with optimizations).</p>
 </body></html>
 
     </content>
