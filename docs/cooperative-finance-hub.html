@@ -3,11 +3,11 @@
   <head>
   <meta charset="UTF-8">
 
-  <link rel="canonical" href="/research-towards-universality-in-multilingual-text-rewriting" />
+  <link rel="canonical" href="/cooperative-finance-hub" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Adapting mT5 to fit different text styles">
+  <meta name="description" content="A finance hub, a [[Cooperative Hub]], tries to solve the funding problem forfuture cooperatives.  In many ways it can look like a venture capital firm or acr...">
 
   <meta property="og:site_name" content="My digital garden">
 
@@ -16,11 +16,11 @@
   <link rel="stylesheet" href="/digital-garden/styles.css">
 
   
-  <meta property="og:description" content="Adapting mT5 to fit different text styles"/>
+  <meta property="og:description" content="A finance hub, a [[Cooperative Hub]], tries to solve the funding problem forfuture cooperatives.  In many ways it can look like a venture capital firm or acr..."/>
   
 
   
-  <meta property="og:title" content="Towards Universality in Multilingual Text Rewriting">
+  <meta property="og:title" content="Finance Hub">
   <meta property="og:type" content="article">
   
 
@@ -29,13 +29,13 @@
   <meta property="article:author" content="/">
   
 
-  <meta property="og:url" content="/research-towards-universality-in-multilingual-text-rewriting" />
+  <meta property="og:url" content="/cooperative-finance-hub" />
 
   
 
   <title>
     
-      Towards Universality in Multilingual Text Rewriting &mdash; My digital garden
+      Finance Hub &mdash; My digital garden
     
   </title>
 </head>
@@ -48,9 +48,9 @@
     <div class="wrapper">
       <main><article>
   <div>
-    <h1>Towards Universality in Multilingual Text Rewriting</h1>
-    <time datetime="2021-09-17T11:48:07+09:00">
-      Last updated on September 17, 2021
+    <h1>Finance Hub</h1>
+    <time datetime="2021-12-02T14:09:17+09:00">
+      Last updated on December 2, 2021
       
     </time>
   </div>
@@ -59,38 +59,24 @@
     <content>
       <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body>
-<p>This <span title="There is no note that matches this link." class="invalid-link">
+<p>A finance hub, a <span title="There is no note that matches this link." class="invalid-link">
   <span class="invalid-link-brackets">[[</span>
-  Machine Translation
-  <span class="invalid-link-brackets">]]</span></span> <a class="internal-link" href="/digital-garden/research">Research</a>
-<a href="https://arxiv.org/pdf/2107.14749.pdf" target="blank">paper</a>
-demonstrates how to modify a bilingual multilingual encoder decoder network to
-change the style of format of content using example sentences.</p>
+  Cooperative Hub
+  <span class="invalid-link-brackets">]]</span></span>, tries to solve the funding problem for
+future cooperatives.  In many ways it can look like a venture capital firm or a
+credit union but is owned by the sub cooperatives using the hub’s funding.</p>
 
-<p>This follows on some previous <a href="https://arxiv.org/abs/2010.03802" target="blank">work</a> with
-some tweaks to force multi-lingual support and some simplifications.  They in
-brief modify the ecoder’s embedding inputs with a multi-step process:</p>
-
+<p>Pros:</p>
 <ul>
-  <li>Take a sequence of sentences that are assumed to have the same “style”</li>
-  <li>Corrupt the second sentence to have either missing words or changed words</li>
-  <li>Produce a “style” vector by prepending some <code class="language-plaintext highlighter-rouge">&lt;2style&gt;</code> type token to the
-first sentence and running it through the encoder.</li>
-  <li>Mixing the embedding of the first sentence with first embedding of the first sentence.</li>
-  <li>Reproducing an uncorrupted version of the second sentence along with an
-English translation of the sentence (using parallel data).</li>
+  <li>Ensures future cooperatives have access to capital.</li>
 </ul>
 
-<p>This modifies the original work in two key ways:</p>
-
+<p>Cons:</p>
 <ul>
-  <li>The encoder network is the same for both input sentences</li>
-  <li>The decoder is expected to also translate</li>
+  <li>Requires sub cooperatives to pay sufficient interest on on borrowed capital
+to grow the hub.</li>
+  <li>Growth goals for the Hub may conflict with sub cooperatives.</li>
 </ul>
-
-<p>Both of these changes seem to encourage the model to do cross language style
-transfer with few examples.</p>
-
 </body></html>
 
     </content>
@@ -100,10 +86,19 @@ transfer with few examples.</p>
         Backlinks
       </h3>
       
-        <div style="font-size: 0.9em">
-          <p>
-            No backlinks yet
-          </p>
+        <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+          
+            <div class="backlink-box">
+              <a class="internal-link"
+                 href="/digital-garden/shared-capital-cooperative">
+                Shared Capital Cooperative
+              </a>
+              <br>
+              <div style="font-size: 0.9em">
+                A [[Finance Hub]] that takes on external investments that is then used to support cooperatives as they grow. They ensure...
+              </div>
+            </div>
+          
         </div>
       
     </side>

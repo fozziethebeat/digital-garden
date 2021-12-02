@@ -3,11 +3,11 @@
   <head>
   <meta charset="UTF-8">
 
-  <link rel="canonical" href="/research-towards-universality-in-multilingual-text-rewriting" />
+  <link rel="canonical" href="/cooperative-shared-services-hub" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Adapting mT5 to fit different text styles">
+  <meta name="description" content="This [[Cooperative Pattern]] centralized legal and regulatory responsibilitiesshared across multiple cooperatives into a central entity, oftentimes aseparate...">
 
   <meta property="og:site_name" content="My digital garden">
 
@@ -16,11 +16,11 @@
   <link rel="stylesheet" href="/digital-garden/styles.css">
 
   
-  <meta property="og:description" content="Adapting mT5 to fit different text styles"/>
+  <meta property="og:description" content="This [[Cooperative Pattern]] centralized legal and regulatory responsibilitiesshared across multiple cooperatives into a central entity, oftentimes aseparate..."/>
   
 
   
-  <meta property="og:title" content="Towards Universality in Multilingual Text Rewriting">
+  <meta property="og:title" content="Shared Services Hub">
   <meta property="og:type" content="article">
   
 
@@ -29,13 +29,13 @@
   <meta property="article:author" content="/">
   
 
-  <meta property="og:url" content="/research-towards-universality-in-multilingual-text-rewriting" />
+  <meta property="og:url" content="/cooperative-shared-services-hub" />
 
   
 
   <title>
     
-      Towards Universality in Multilingual Text Rewriting &mdash; My digital garden
+      Shared Services Hub &mdash; My digital garden
     
   </title>
 </head>
@@ -48,9 +48,9 @@
     <div class="wrapper">
       <main><article>
   <div>
-    <h1>Towards Universality in Multilingual Text Rewriting</h1>
-    <time datetime="2021-09-17T11:48:07+09:00">
-      Last updated on September 17, 2021
+    <h1>Shared Services Hub</h1>
+    <time datetime="2021-12-02T13:34:37+09:00">
+      Last updated on December 2, 2021
       
     </time>
   </div>
@@ -59,38 +59,22 @@
     <content>
       <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body>
-<p>This <span title="There is no note that matches this link." class="invalid-link">
-  <span class="invalid-link-brackets">[[</span>
-  Machine Translation
-  <span class="invalid-link-brackets">]]</span></span> <a class="internal-link" href="/digital-garden/research">Research</a>
-<a href="https://arxiv.org/pdf/2107.14749.pdf" target="blank">paper</a>
-demonstrates how to modify a bilingual multilingual encoder decoder network to
-change the style of format of content using example sentences.</p>
+<p>This <a class="internal-link" href="/digital-garden/cooperative-patterns">Cooperative Pattern</a> centralized legal and regulatory responsibilities
+shared across multiple cooperatives into a central entity, oftentimes a
+separate business entity.  The separate entity often is a for-profit entity
+that provides legal, financial, and other shared backend services to multiple
+cooperatives.</p>
 
-<p>This follows on some previous <a href="https://arxiv.org/abs/2010.03802" target="blank">work</a> with
-some tweaks to force multi-lingual support and some simplifications.  They in
-brief modify the ecoder’s embedding inputs with a multi-step process:</p>
-
+<p>Pros:</p>
 <ul>
-  <li>Take a sequence of sentences that are assumed to have the same “style”</li>
-  <li>Corrupt the second sentence to have either missing words or changed words</li>
-  <li>Produce a “style” vector by prepending some <code class="language-plaintext highlighter-rouge">&lt;2style&gt;</code> type token to the
-first sentence and running it through the encoder.</li>
-  <li>Mixing the embedding of the first sentence with first embedding of the first sentence.</li>
-  <li>Reproducing an uncorrupted version of the second sentence along with an
-English translation of the sentence (using parallel data).</li>
+  <li>Allows a group of cooperatives with shared regulatory needs to share the knowledge and responsibilities to reduce costs.</li>
 </ul>
 
-<p>This modifies the original work in two key ways:</p>
-
+<p>Cons:</p>
 <ul>
-  <li>The encoder network is the same for both input sentences</li>
-  <li>The decoder is expected to also translate</li>
+  <li>Can be highly transactional between cooperatives and the shared service entity.</li>
+  <li>Abstracts the business model away from individual cooperatives.</li>
 </ul>
-
-<p>Both of these changes seem to encourage the model to do cross language style
-transfer with few examples.</p>
-
 </body></html>
 
     </content>
@@ -100,10 +84,19 @@ transfer with few examples.</p>
         Backlinks
       </h3>
       
-        <div style="font-size: 0.9em">
-          <p>
-            No backlinks yet
-          </p>
+        <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+          
+            <div class="backlink-box">
+              <a class="internal-link"
+                 href="/digital-garden/evergreen-cooperative">
+                Evergreen Cooperative
+              </a>
+              <br>
+              <div style="font-size: 0.9em">
+                The Evergreen Cooperative utilizes a [[Shared Services Hub]] with a separate LLC, Evergreen Business Services, to do financing, accounting, support,...
+              </div>
+            </div>
+          
         </div>
       
     </side>

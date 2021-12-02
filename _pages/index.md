@@ -14,6 +14,7 @@ Some key themes are:
 
 *  Academic [[Research]]
 *  [[Buddhism]]
+*  [[Cooperative Pattern]]
 
 <style>
   .wrapper {
