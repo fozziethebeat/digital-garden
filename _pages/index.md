@@ -15,6 +15,7 @@ Some key themes are:
 *  Academic [[Research]]
 *  [[Buddhism]]
 *  [[Cooperative Pattern]]
+*  [[Ethereum]]
 
 <style>
   .wrapper {
