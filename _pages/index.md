@@ -16,6 +16,7 @@ Some key themes are:
 *  [[Buddhism]]
 *  [[Cooperative Pattern]]
 *  [[Ethereum]]
+*  [[Commons]]
 
 <style>
   .wrapper {
