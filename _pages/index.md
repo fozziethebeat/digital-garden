@@ -13,6 +13,7 @@ You can peek at my brain any any moment.
 Some key themes are:
 
 *  Academic [[Research]]
+*  [[Blog Notes]]
 *  [[Buddhism]]
 *  [[Cooperative Pattern]]
 *  [[Ethereum]]
